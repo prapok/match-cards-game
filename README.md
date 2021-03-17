@@ -1,5 +1,5 @@
 # Preview App
-Check the live app [Here] https://match-cards.herokuapp.com/
+Check the live app [here](https://match-cards.herokuapp.com)
 
 # Getting Started with Create React App
 
