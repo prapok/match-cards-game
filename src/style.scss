@@ -1,0 +1,89 @@
+.wrapper {
+    padding:0 0 25px 0;
+    margin:0;
+    min-height: 611px;
+    .optHeader {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        .timer {
+            margin: 10px;
+            font-size: 25px;
+            font-style: bold;
+            color: #e6d4b4;
+            position: fixed;
+            top: 10%;
+            right: 1%;
+        }
+        .btn {
+            padding: 15px 40px;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 20px;
+            background: #a0d4e8;
+            color: #1f2e4d;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            vertical-align: top;
+        }
+        .btn:last-child{
+            margin: 0;
+        }
+        .btn:hover{
+            background: #e6d4b4;
+            color: #000710;
+        }
+        .btn:focus{outline: none;}
+    }
+    .container { 
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        text-align: center;
+        .difficulty {
+            width: 25%;
+        }
+        .content {
+            display: inline-block;
+            width: 100%;
+            .card {
+                background: url('./images/default-placeholder.png');
+                background-size: cover;
+                background-position: center;
+                max-width: 165px;
+                max-height: 165px;
+                cursor: pointer;
+                border: 2px solid #e9eef1;
+                border-radius: 4px;
+                margin: 4px;
+                transform-style: preserve-3d;
+                transition: .2s;
+                display: inline-block;
+                box-shadow: 0px 2px 3px #1f2e4da6;
+                .cardContent {
+                    visibility: hidden;
+                    pointer-events: none;
+                }
+                &.active {
+                    background: #e9eef1;
+                    .cardContent {
+                        visibility: visible;
+                    }
+                }
+                &.matched {
+                    .cardContent {
+                        visibility: visible;
+                    }
+                    background: #38c155;
+                    border: 2px solid #38c155;
+                }
+            }
+            .card.click {
+                transform: rotateY(90deg);
+               
+            }
+        }
+    }
+}
